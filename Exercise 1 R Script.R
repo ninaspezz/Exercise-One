@@ -58,7 +58,7 @@ print(df)
 #5: Create dummy variables for company and product category#
 
 df <- cbind(df, dummy(df$product_category, sep = "_"))
-df <- cbind(df, dummy(df$product_category, sep = "_"))
+df <- cbind(df, dummy(df$company, sep = "_"))
 
 print(df)
 
